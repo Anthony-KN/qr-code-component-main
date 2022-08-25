@@ -1,0 +1,49 @@
+@use 'variables';
+@use 'initial';
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__main {
+    width: 325px;
+    background-color: variables.$White;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    &__QR img {
+        margin: 15px;
+        width: 290px;
+        height: 290px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    &__text {
+        text-align: center;
+        margin: 0 35px 40px 35px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+    &__paragraph {
+        font-weight: 400;
+        font-size: 1em;
+        color: variables.$Grayish-blue;
+    }
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+}
